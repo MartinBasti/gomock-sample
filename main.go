@@ -8,7 +8,7 @@ import (
 	"github.com/MartinBasti/gomock-sample/makers"
 )
 
-func MakeASandwich(areYouHappy, didYouExcersise bool, maker *makers.SandwichMaker) {
+func MakeASandwich(areYouHappy, didYouExcersise bool, maker makers.SandwichMakerInterface) {
 	if areYouHappy {
 		fmt.Printf("Happy sandwich:%s", maker.Make("tuna"))
 	} else {
